@@ -1,0 +1,20 @@
+{
+  "name": "susu-course-plugins",
+  "interface": {
+    "displayName": "SUSU Course Plugins"
+  },
+  "plugins": [
+    {
+      "name": "susu-course-plugin",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
