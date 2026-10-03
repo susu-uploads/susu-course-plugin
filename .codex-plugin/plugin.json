@@ -1,7 +1,7 @@
 {
   "name": "susu-course-plugin",
-  "version": "0.1.0",
-  "description": "Create, export, normalize, and maintain standalone SUSU course repositories.",
+  "version": "0.2.0",
+  "description": "Repository guidelines and Moodle exports for courses based on susu-course-template.",
   "author": {
     "name": "susu-uploads",
     "url": "https://github.com/susu-uploads"
@@ -10,7 +10,7 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "SUSU Courses",
-    "shortDescription": "Create and maintain course repositories",
+    "shortDescription": "Course repository guidelines and Moodle exports",
     "developerName": "susu-uploads",
     "category": "Productivity"
   }
