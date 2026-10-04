@@ -27,16 +27,17 @@ An existing course uses its own repository and working tree. Keep approved names
 - Open each requested assignment's source page. Extract its educational activity description, often in `activity-description` and `no-overflow`, including any criteria, links, or methodological text supplied there. Treat those selectors as hints; Moodle themes vary. Keep submission tables, user feedback, and interface controls outside the extracted description.
 - Fill each requested `TASK.md` from the confirmed assignment title, canonical URL, and description. Resolve relative content links against the source page. Distinguish a confirmed empty description from an inaccessible or incomplete page; only the former produces an empty exported body.
 - Convert source HTML to Markdown according to the guidelines. Check the source's educational text and links rather than exporting the whole page as text.
+- When creating or refreshing the requested cards, remove all instructional and technical HTML comments, including those copied from the template. A card with confirmed empty description contains only its completed frontmatter. Keep comments in the unfilled template samples themselves.
 
 ## Download and Place Materials
 
 - Follow source resource and attachment links to obtain original files. Preserve their filenames and contents, source numbering, and required relative paths. Check that a download contains the expected material rather than a login or error page; do not replace a valid local file with an unsuccessful download.
 - Place lectures, assignment attachments, and additional literature according to the guidelines. Populate the bibliography from the confirmed source and apply its three literature conditions.
 - During a repeated export, keep existing solutions and unrelated files. Replace an exported attachment only when its source and the requested refresh are confirmed; if a path conflicts with user-authored work, preserve that work and report the conflict. Absence from an incomplete source does not justify deletion.
-- Update course titles, card metadata, template comments, LFS patterns, and Toptal course-tool tags only as required for the requested export. Keep originals and user-authored artifacts intact, and do not execute notebooks.
+- Update course titles, card metadata, LFS patterns, and Toptal course-tool tags only as required for the requested export. Keep originals and user-authored artifacts intact, and do not execute notebooks.
 
 ## Verify and Report
 
 Apply the guidelines' change checks to the exported result. Compare course sections, activity order, assignment descriptions, criteria, and links with the available source. Confirm that every requested lecture and attachment is present and every practice has its card; identify any material that could not be obtained.
 
-Check the four-field frontmatter, actual directory codes, canonical source URLs, literature condition, ignore rules, and available LFS contents. Use checksums when copying or moving existing documents and notebooks. Review the diff for unrelated changes and session data. Report what was exported or refreshed, what was verified, and any missing source content. Commit and publication remain separate requested actions.
+Check the four-field frontmatter, actual directory codes, canonical source URLs, absence of HTML comments in filled cards, literature condition, ignore rules, and available LFS contents. Use checksums when copying or moving existing documents and notebooks. Review the diff for unrelated changes and session data. Report what was exported or refreshed, what was verified, and any missing source content. Commit and publication remain separate requested actions.
